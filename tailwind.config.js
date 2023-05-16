@@ -12,8 +12,8 @@ module.exports = {
 			colors: {
 				primary: "var(--primary-color)",
 				secondary: "var(--secondary-color)",
-				primaryButton: "var(--primary_button-color)",
-				secondaryButton: "var(--secondary_button-color)",
+				primaryButton: "var(--primary-button-color)",
+				secondaryButton: "var(--secondary-button-color)",
 				accent: "var(--accent-color)",
 			},
 		},
