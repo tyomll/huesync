@@ -1,6 +1,6 @@
 import React, { FC, PropsWithChildren } from "react";
 import { IMeta } from "./meta.interface";
-import { Head } from "next/document";
+import Head from "next/head";
 
 const getTitle = (title: string) => `${title} | Mate`;
 
