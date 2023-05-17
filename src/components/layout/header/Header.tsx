@@ -12,7 +12,11 @@ const Header = () => {
 			</div>
 			<div className="flex items-center gap-[40px]">
 				{links.map((link: string) => {
-					return <p className="font-400 text-[20px] text-primary">{link}</p>;
+					return (
+						<p key={link} className="font-400 text-[20px] text-primary">
+							{link}
+						</p>
+					);
 				})}
 				<button className="bg-none h-full rounded-[14px] border-[1px] px-[35px] py-[20px] border-primaryButton">
 					About Us
