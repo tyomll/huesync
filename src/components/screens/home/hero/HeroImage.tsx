@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-const HeroImage = () => {
+const HeroImage: FC = () => {
 	return (
 		<>
 			<svg
@@ -10,7 +10,7 @@ const HeroImage = () => {
 				viewBox="0 0 601 515"
 				fill="none"
 			>
-				<g clip-path="url(#clip0_332_1228)">
+				<g clipPath="url(#clip0_332_1228)">
 					<path
 						className="fill-primary"
 						d="M311.536 432.535L329.137 427.349L324.001 445L329.137 462.601L311.536 457.465L293.885 462.601L299.07 445L293.885 427.349L311.536 432.535Z"
@@ -18,7 +18,7 @@ const HeroImage = () => {
 						stroke-miterlimit="10"
 					/>
 				</g>
-				<g clip-path="url(#clip1_332_1228)">
+				<g clipPath="url(#clip1_332_1228)">
 					<path
 						className="fill-primary"
 						d="M125.484 345.509L156.96 362.659L125.484 379.947L108.266 411.354L91.0468 379.947L59.5708 362.659L91.0468 345.509L108.266 313.964L125.484 345.509Z"

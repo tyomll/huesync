@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import HeroImage from "./HeroImage";
 
-const Hero = () => {
+const Hero: FC = () => {
 	return (
-		<div className="flex mt-[70px] gap-[50px]">
+		<div className="flex items-center mt-[70px] gap-[50px]">
 			<div className="flex flex-col w-[50%] gap-[35px]">
 				<h1 className="text-primary text-[60px] font-500 leading-[77px]">
 					Navigating the digital landscape for success
