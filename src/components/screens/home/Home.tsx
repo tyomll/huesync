@@ -4,6 +4,7 @@ import Hero from "./sections/hero/Hero";
 import Why from "./sections/why/Why";
 import HowItWorks from "./sections/howItWorks/HowItWorks";
 import Faq from "./sections/faq/Faq";
+import Footer from "./sections/footer/Footer";
 
 const Home = () => {
 	return (
@@ -13,6 +14,7 @@ const Home = () => {
 				<Why />
 				<HowItWorks />
 				<Faq />
+				<Footer />
 			</div>
 		</Layout>
 	);

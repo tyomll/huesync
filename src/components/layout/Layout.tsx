@@ -15,7 +15,7 @@ const Layout: FC<PropsWithChildren<IMeta>> = ({
 		<Meta title={title} description={description}>
 			<div className={`px-[100px] ${spaceGrotesk.className}`}>
 				<Header />
-				<main className="mb-[100px]">{children}</main>
+				<main className="mt-[100px]">{children}</main>
 			</div>
 		</Meta>
 	);
