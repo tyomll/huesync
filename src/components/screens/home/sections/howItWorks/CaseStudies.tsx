@@ -10,7 +10,7 @@ const CaseStudies: FC = () => {
 		<div className="flex items-center mt-[80px] bg-primaryButton rounded-[45px] px-[60px] py-[70px] gap-[100px]">
 			{cases.map((descritption: string, i: number) => {
 				return (
-					<div className="flex">
+					<div key={i} className="flex">
 						<p className="text-secondary">{descritption}</p>
 						{i !== cases.length - 1 && (
 							<div className="w-[2px] bg-secondary ml-[50px]"></div>
