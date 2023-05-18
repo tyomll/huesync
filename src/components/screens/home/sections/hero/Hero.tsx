@@ -3,7 +3,7 @@ import HeroImage from "./HeroImage";
 
 const Hero: FC = () => {
 	return (
-		<div className="flex items-center gap-[50px]">
+		<div id="hero" className="flex items-center gap-[50px]">
 			<div className="flex flex-col w-[50%] gap-[35px]">
 				<h1 className="text-primary text-[60px] font-500 leading-[77px]">
 					Navigating the digital landscape for success

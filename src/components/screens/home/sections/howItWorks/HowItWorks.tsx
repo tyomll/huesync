@@ -4,7 +4,7 @@ import CaseStudies from "./CaseStudies";
 
 const HowItWorks: FC = () => {
 	return (
-		<div>
+		<div id="how">
 			<SectionHeading
 				title="How Does It Work?"
 				subtitle="Explore Real-Life Examples of Our Proven Success through Our Case Studies"

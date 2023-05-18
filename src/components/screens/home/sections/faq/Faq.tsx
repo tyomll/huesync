@@ -5,7 +5,7 @@ import QACardList from "./QACardList";
 
 const Faq: FC = () => {
 	return (
-		<div>
+		<div id="faq">
 			<SectionHeading
 				title="FAQ"
 				subtitle="Answers to some questions you might have."

@@ -1,13 +1,19 @@
 import React, { FC } from "react";
-import logo from "@/assets/logo.svg";
-import Image from "next/image";
+import { Link } from "react-scroll";
 
 interface ILogo {
 	color: string;
 }
 const Logo: FC<ILogo> = ({ color }) => {
 	return (
-		<div className="flex items-center border-gap-[8px]">
+		<Link
+			to="hero"
+			spy={true}
+			smooth={true}
+			offset={-150}
+			duration={500}
+			className="flex items-center border-gap-[8px] cursor-pointer"
+		>
 			<div>
 				<svg
 					width="34"
@@ -31,7 +37,7 @@ const Logo: FC<ILogo> = ({ color }) => {
 				</svg>
 			</div>
 			<h1 className={`font-500 text-[40px] text-${color}`}>Huesync</h1>
-		</div>
+		</Link>
 	);
 };
 

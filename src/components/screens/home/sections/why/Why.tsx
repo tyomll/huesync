@@ -4,7 +4,7 @@ import CardList from "./Cards/CardList";
 
 const Why: FC = () => {
 	return (
-		<div>
+		<div id="why">
 			<SectionHeading
 				title="WHY?"
 				subtitle="Unlock the Power of Visual Harmony. Explore the Advantages of HueSync."

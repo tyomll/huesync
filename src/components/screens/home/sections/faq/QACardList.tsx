@@ -30,9 +30,10 @@ const questions = [
 const QACardList = () => {
 	return (
 		<div className="flex flex-col gap-[30px] mt-[60px]">
-			{questions.map((question) => {
+			{questions.map((question, i: number) => {
 				return (
 					<QACard
+						key={i}
 						number={question.number}
 						question={question.question}
 						answer={question.answer}
