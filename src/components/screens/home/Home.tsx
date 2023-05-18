@@ -1,13 +1,17 @@
 import Layout from "@/components/layout/Layout";
 import React from "react";
-import Hero from "./hero/Hero";
-import Why from "./why/Why";
+import Hero from "./sections/hero/Hero";
+import Why from "./sections/why/Why";
+import HowItWorks from "./sections/howItWorks/HowItWorks";
 
 const Home = () => {
 	return (
 		<Layout title="Home" description="poxeq indz">
-			<Hero />
-			<Why />
+			<div className="flex flex-col gap-[130px]">
+				<Hero />
+				<Why />
+				<HowItWorks />
+			</div>
 		</Layout>
 	);
 };

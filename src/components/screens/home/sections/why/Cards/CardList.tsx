@@ -40,7 +40,7 @@ const cards: ICard[] = [
 ];
 const CardList: FC = () => {
 	return (
-		<div className="flex flex-wrap justify-center gap-[40px] mt-[80px]">
+		<div className="flex flex-wrap justify-between gap-[40px] mt-[80px]">
 			{cards.map((card: ICard, idx: number) => {
 				return (
 					<Card

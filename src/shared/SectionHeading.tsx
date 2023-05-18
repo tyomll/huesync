@@ -1,18 +1,20 @@
 import React, { FC } from "react";
 
-const Heading: FC = () => {
+interface IHeading {
+	title: string;
+	subtitle: string;
+}
+const SectionHeading: FC<IHeading> = ({ title, subtitle }) => {
 	return (
 		<div className="flex items-center gap-[40px]">
 			<div className="font-500 text-[40px] text-primary bg-secondaryButton rounded-[7px] px-[7px] w-fit">
-				WHY?
+				{title}
 			</div>
 			<div className="w-[50%]">
-				<p className="text-primary font-400 text-[18px]">
-					Unlock the Power of Visual Harmony. Explore the Advantages of HueSync.
-				</p>
+				<p className="text-primary font-400 text-[18px]">{subtitle}</p>
 			</div>
 		</div>
 	);
 };
 
-export default Heading;
+export default SectionHeading;

@@ -7,7 +7,6 @@ interface ICard {
 }
 const Card: FC<ICard> = ({ bg, highlight, text }) => {
 	const shadow = { boxShadow: "0px 5px 0px #191A23" };
-	console.log(highlight);
 	return (
 		<div
 			className={`flex items-center justify-center w-[45%] bg-${bg} px-[150px] py-[50px] rounded-[45px] border-[1px] border-primaryButton`}
