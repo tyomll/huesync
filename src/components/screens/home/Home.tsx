@@ -5,6 +5,7 @@ import Why from "./sections/why/Why";
 import HowItWorks from "./sections/howItWorks/HowItWorks";
 import Faq from "./sections/faq/Faq";
 import Footer from "./sections/footer/Footer";
+import Toolbar from "@/components/toolbar/Toolbar";
 
 const Home = () => {
 	return (
@@ -15,6 +16,9 @@ const Home = () => {
 				<HowItWorks />
 				<Faq />
 				<Footer />
+			</div>
+			<div className="flex justify-center items-center w-full sticky bottom-[50px]">
+				<Toolbar />
 			</div>
 		</Layout>
 	);

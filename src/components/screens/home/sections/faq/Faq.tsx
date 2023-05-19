@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import SectionHeading from "@/shared/SectionHeading";
-import QACard from "./QACard";
 import QACardList from "./QACardList";
 
 const Faq: FC = () => {
