@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
+import { useCurrentColor } from "../hooks/useCurrentColor";
 
 const TextButton = () => {
-	const [currentColor, setCurrentColor] = useState<string>("");
-	useEffect(() => {
-		const color = getComputedStyle(document.documentElement).getPropertyValue(
-			"--secondary-color"
-		);
-		setCurrentColor(color);
-	}, []);
+	const { currentColor, handleCurrentColorChange } =
+		useCurrentColor("--primary-color");
 	return (
 		<div className="flex flex-col items-center h-full px-[25px] bg-secondary rounded-[5px] gap-[5px]">
 			<div className="w-[60px] h-[10px]">
@@ -16,6 +12,7 @@ const TextButton = () => {
 					type="text"
 					maxLength={7}
 					value={currentColor}
+					onChange={(e) => handleCurrentColorChange(e)}
 				/>
 			</div>
 			<div className="mt-[5px]">Text</div>
