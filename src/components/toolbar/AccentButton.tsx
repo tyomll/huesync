@@ -1,11 +1,12 @@
 import { useCurrentColor } from "../hooks/useCurrentColor";
 
-const TextButton = () => {
+const AccentButton = () => {
 	const { currentColor, handleCurrentColorChange } =
-		useCurrentColor("--primary-color");
+		useCurrentColor("--accent-color");
+
 	return (
 		<div className="flex flex-col items-center h-full px-[25px] bg-secondary rounded-[5px] gap-[5px] cursor-pointer">
-			<div className="w-[60px] h-[10px] ">
+			<div className="w-[60px] h-[10px]">
 				<input
 					className="w-full h-full text-[13px] outline-none text-center bg-accent"
 					type="text"
@@ -15,13 +16,13 @@ const TextButton = () => {
 				/>
 			</div>
 			<div className="flex flex-col items-center cursor-pointer">
-				<label className="mt-[5px] cursor-pointer" htmlFor="text">
-					Text
+				<label className="mt-[5px] cursor-pointer" htmlFor="accent">
+					Accent
 				</label>
 				<input
 					className="invisible"
 					type="color"
-					id="text"
+					id="accent"
 					value={currentColor}
 					onChange={(e) => handleCurrentColorChange(e.target.value)}
 				/>
@@ -30,4 +31,4 @@ const TextButton = () => {
 	);
 };
 
-export default TextButton;
+export default AccentButton;

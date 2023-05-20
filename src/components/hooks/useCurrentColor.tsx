@@ -9,8 +9,14 @@ export const useCurrentColor = (colorName: string) => {
 		setCurrentColor(color);
 	}, []);
 
-	const handleCurrentColorChange = (e: ChangeEvent<HTMLInputElement>) => {
-		setCurrentColor(e.target.value);
+	const handleCurrentColorChange = (
+		e: ChangeEvent<HTMLInputElement> | string
+	) => {
+		if (typeof e === "string") {
+			setCurrentColor(e);
+		} else {
+			setCurrentColor(e.target.value);
+		}
 	};
 	return { currentColor, handleCurrentColorChange };
 };
