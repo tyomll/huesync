@@ -10,7 +10,7 @@ const Toolbar: FC = () => {
 
 	return (
 		<div
-			className="flex items-center justify-between h-[80px] w-fit bg-accent px-[30px] py-[10px] rounded-[15px] border-[1px] border-primaryButton gap-[20px]"
+			className="flex items-center justify-between h-[80px] w-fit bg-[#f3f3f3] px-[30px] py-[10px] rounded-[15px] border-[1px] border-[#000000] gap-[20px]"
 			style={shadow}
 		>
 			<TextButton />

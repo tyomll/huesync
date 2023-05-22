@@ -6,12 +6,12 @@ const AccentButton = () => {
 
 	return (
 		<label
-			className="flex flex-col items-center h-full px-[25px] bg-secondary rounded-[5px] gap-[5px] cursor-pointer"
+			className="flex flex-col items-center h-full px-[25px] bg-[#ffffff] rounded-[5px] gap-[5px] cursor-pointer"
 			htmlFor="accent"
 		>
 			<div className="w-[60px] h-[10px]">
 				<input
-					className="w-full h-full text-[13px] outline-none text-center bg-accent"
+					className="w-full h-full text-[13px] outline-none text-center bg-[#f3f3f3]"
 					type="text"
 					maxLength={7}
 					value={currentColor}
