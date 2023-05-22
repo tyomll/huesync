@@ -4,7 +4,10 @@ const TextButton = () => {
 	const { currentColor, handleCurrentColorChange } =
 		useCurrentColor("--primary-color");
 	return (
-		<div className="flex flex-col items-center h-full px-[25px] bg-secondary rounded-[5px] gap-[5px] cursor-pointer">
+		<label
+			className="flex flex-col items-center h-full px-[25px] bg-secondary rounded-[5px] gap-[5px] cursor-pointer"
+			htmlFor="text"
+		>
 			<div className="w-[60px] h-[10px] ">
 				<input
 					className="w-full h-full text-[13px] outline-none text-center bg-accent"
@@ -26,7 +29,7 @@ const TextButton = () => {
 					onChange={(e) => handleCurrentColorChange(e.target.value)}
 				/>
 			</div>
-		</div>
+		</label>
 	);
 };
 
