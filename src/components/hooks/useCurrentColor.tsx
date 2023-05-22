@@ -13,8 +13,10 @@ export const useCurrentColor = (colorName: string) => {
 		e: ChangeEvent<HTMLInputElement> | string
 	) => {
 		if (typeof e === "string") {
+			document.documentElement.style.setProperty(colorName, e);
 			setCurrentColor(e);
 		} else {
+			document.documentElement.style.setProperty(colorName, e.target.value);
 			setCurrentColor(e.target.value);
 		}
 	};

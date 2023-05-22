@@ -1,9 +1,8 @@
 import { useCurrentColor } from "../hooks/useCurrentColor";
 
 const BackgroundButton = () => {
-	const { currentColor, handleCurrentColorChange } = useCurrentColor(
-		"--secondary-button-color"
-	);
+	const { currentColor, handleCurrentColorChange } =
+		useCurrentColor("--secondary-color");
 
 	return (
 		<label

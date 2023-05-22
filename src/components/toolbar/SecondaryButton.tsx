@@ -2,8 +2,9 @@ import React from "react";
 import { useCurrentColor } from "../hooks/useCurrentColor";
 
 const SecondaryButton = () => {
-	const { currentColor, handleCurrentColorChange } =
-		useCurrentColor("--secondary-color");
+	const { currentColor, handleCurrentColorChange } = useCurrentColor(
+		"--secondary-button-color"
+	);
 	return (
 		<label
 			className="flex flex-col items-center h-full px-[25px] bg-secondary rounded-[5px] gap-[5px] cursor-pointer"

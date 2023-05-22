@@ -5,7 +5,7 @@ const Info: FC = () => {
 	return (
 		<div>
 			<div className="font-500 text-[20px] text-primary bg-secondaryButton rounded-[7px] px-[7px] w-fit">
-				<p>Contact Us:</p>
+				<p className="text-primary">Contact Us:</p>
 			</div>
 			<div className="flex flex-col mt-[30px] text-secondary gap-[20px]">
 				<Link

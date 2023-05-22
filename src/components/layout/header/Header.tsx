@@ -38,7 +38,7 @@ const Header = () => {
 						smooth={true}
 						offset={-150}
 						duration={500}
-						className="bg-none h-full rounded-[14px] border-[1px] px-[35px] py-[20px] border-primaryButton cursor-pointer"
+						className="text-primary bg-none h-full rounded-[14px] border-[1px] px-[35px] py-[20px] border-primaryButton cursor-pointer"
 					>
 						Contact Us
 					</Link>
