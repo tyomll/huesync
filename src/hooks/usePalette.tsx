@@ -23,10 +23,12 @@ export const usePalette = () => {
 	const createPalette = () => {
 		labels.map((item) => {
 			const label = item.label;
-			const color = getComputedStyle(document.documentElement).getPropertyValue(
-				item.colorName
-			);
-			palette[label] = color;
+			if (typeof document !== "undefined") {
+				const color = getComputedStyle(
+					document.documentElement
+				).getPropertyValue(item.colorName);
+				palette[label] = color;
+			}
 		});
 	};
 

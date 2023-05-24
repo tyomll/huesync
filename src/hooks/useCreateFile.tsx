@@ -8,7 +8,7 @@ export const useCreateFile = () => {
 		Secondary: ${palette.secondary}
 		Primary Button: ${palette.primaryButton}
 		Secondary Button: ${palette.secondaryButton}
-		Accent: #ffb084 ${palette.accent} 
+		Accent: ${palette.accent} 
 Thanks for using Huesync!`;
 
 	const fileName = "colors";
