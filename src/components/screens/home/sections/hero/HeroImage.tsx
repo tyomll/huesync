@@ -15,7 +15,7 @@ const HeroImage: FC = () => {
 						className="fill-primary"
 						d="M311.536 432.535L329.137 427.349L324.001 445L329.137 462.601L311.536 457.465L293.885 462.601L299.07 445L293.885 427.349L311.536 432.535Z"
 						stroke="white"
-						stroke-miterlimit="10"
+						strokeMiterlimit="10"
 					/>
 				</g>
 				<g clipPath="url(#clip1_332_1228)">
@@ -23,7 +23,7 @@ const HeroImage: FC = () => {
 						className="fill-primary"
 						d="M125.484 345.509L156.96 362.659L125.484 379.947L108.266 411.354L91.0468 379.947L59.5708 362.659L91.0468 345.509L108.266 313.964L125.484 345.509Z"
 						stroke="white"
-						stroke-miterlimit="10"
+						strokeMiterlimit="10"
 					/>
 				</g>
 				<path

@@ -4,6 +4,7 @@ import BackgroundButton from "./BackgroundButton";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import AccentButton from "./AccentButton";
+import ExportButton from "./ExportButton";
 
 const Toolbar: FC = () => {
 	const shadow = { boxShadow: "0px 3px 0px #191A23" };
@@ -18,6 +19,7 @@ const Toolbar: FC = () => {
 			<PrimaryButton />
 			<SecondaryButton />
 			<AccentButton />
+			<ExportButton />
 		</div>
 	);
 };

@@ -1,4 +1,4 @@
-import { useCurrentColor } from "../hooks/useCurrentColor";
+import { useCurrentColor } from "../../hooks/useCurrentColor";
 
 const BackgroundButton = () => {
 	const { currentColor, handleCurrentColorChange } =
@@ -6,7 +6,7 @@ const BackgroundButton = () => {
 
 	return (
 		<label
-		className="flex flex-col items-center h-full px-[25px] bg-[#ffffff] rounded-[5px] gap-[5px] cursor-pointer"
+			className="flex flex-col items-center h-full px-[25px] bg-[#ffffff] rounded-[5px] gap-[5px] cursor-pointer"
 			htmlFor="background"
 		>
 			<div className="w-[60px] h-[10px]">

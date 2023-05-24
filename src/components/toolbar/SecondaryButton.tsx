@@ -1,5 +1,5 @@
 import React from "react";
-import { useCurrentColor } from "../hooks/useCurrentColor";
+import { useCurrentColor } from "../../hooks/useCurrentColor";
 
 const SecondaryButton = () => {
 	const { currentColor, handleCurrentColorChange } = useCurrentColor(
