@@ -17,7 +17,7 @@ const Home = () => {
 				<Faq />
 				<Footer />
 			</div>
-			<div className="flex justify-center items-center w-full sticky bottom-[50px]">
+			<div className="flex justify-center items-center w-full fixed left-0 bottom-[50px]">
 				<Toolbar />
 			</div>
 		</Layout>
