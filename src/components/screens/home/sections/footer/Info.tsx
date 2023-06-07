@@ -3,7 +3,7 @@ import React, { FC } from "react";
 
 const Info: FC = () => {
 	return (
-		<div>
+		<>
 			<div className="font-500 text-[20px] text-primary bg-secondaryButton rounded-[7px] px-[7px] w-fit">
 				<p className="text-primary">Contact Us:</p>
 			</div>
@@ -25,7 +25,7 @@ const Info: FC = () => {
 					Github: tyommmm
 				</Link>
 			</div>
-		</div>
+		</>
 	);
 };
 

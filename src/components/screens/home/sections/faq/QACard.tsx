@@ -19,8 +19,8 @@ const QACard: FC<IQACard> = ({ number, question, answer }) => {
 			} px-[60px] py-[40px] rounded-[45px] border-[1px] border-primaryButton gap-[30px] transition duartion-700`}
 			style={shadow}
 		>
-			<div className="flex justify-between items-center">
-				<div className="flex items-center gap-[25px]">
+			<div className="flex max-md:flex-col max-md:text-center max-md:gap-[20px] justify-between items-center">
+				<div className="flex max-md:flex-col max-md:gap-[5px] items-center gap-[25px]">
 					<h1 className="text-[60px] font-500 text-primary">{number}</h1>
 					<h2 className="text-[30px] font-500 text-primary">{question}</h2>
 				</div>

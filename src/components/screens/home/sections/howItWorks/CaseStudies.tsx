@@ -7,7 +7,7 @@ const cases: string[] = [
 ];
 const CaseStudies: FC = () => {
 	return (
-		<div className="flex items-center mt-[80px] bg-primaryButton rounded-[45px] px-[60px] py-[70px] gap-[100px]">
+		<div className="flex max-lg:flex-col tems-center mt-[80px] bg-primaryButton rounded-[45px] px-[60px] py-[70px] gap-[100px]">
 			{cases.map((descritption: string, i: number) => {
 				return (
 					<div key={i} className="flex">

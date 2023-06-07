@@ -3,8 +3,11 @@ import HeroImage from "./HeroImage";
 
 const Hero: FC = () => {
 	return (
-		<div id="hero" className="flex items-center gap-[50px]">
-			<div className="flex flex-col w-[50%] gap-[35px]">
+		<div
+			id="hero"
+			className="flex lg:flex-row flex-col items-center gap-[50px]"
+		>
+			<div className="flex flex-col max-lg:items-center max-lg:text-center max-lg:w-[100%] w-[50%] gap-[35px]">
 				<h1 className="text-primary text-[60px] font-500 leading-[77px]">
 					Navigating the digital landscape for success
 				</h1>
@@ -17,7 +20,7 @@ const Hero: FC = () => {
 					Book a consultation
 				</button>
 			</div>
-			<div className="flex justify-end w-[50%]">
+			<div className="flex max-lg:justify-center justify-end max-lg:w-[100%] w-[50%]">
 				<HeroImage />
 			</div>
 		</div>

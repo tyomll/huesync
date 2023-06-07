@@ -5,7 +5,7 @@ import Linkedin from "@/shared/icons/Linkedin";
 
 const Heading = () => {
 	return (
-		<div className="flex w-full justify-between">
+		<div className="flex max-md:flex-col max-md:items-center w-full justify-between">
 			<Logo color="secondary" />
 			<div className="flex gap-[20px]">
 				<Linkedin />

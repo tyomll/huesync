@@ -14,9 +14,9 @@ const links: ILinks[] = [
 const Header = () => {
 	return (
 		<div className="sticky top-0 z-50 bg-secondary">
-			<div className="flex items-center justify-between bg-secondary py-[40px]">
+			<div className="flex max-lg:flex-col max-md:py-[20px] items-center justify-between bg-secondary py-[40px]">
 				<Logo color="primary" />
-				<div className="flex items-center gap-[40px]">
+				<div className="flex flex-wrap max-md:hidden items-center gap-[40px]">
 					{links.map((link: ILinks) => {
 						return (
 							<Link
