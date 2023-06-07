@@ -1,13 +1,14 @@
-import { useCurrentColor } from "../../hooks/useCurrentColor";
+import React from "react";
+import { useCurrentColor } from "../../../hooks/useCurrentColor";
 
-const BackgroundButton = () => {
-	const { currentColor, handleCurrentColorChange } =
-		useCurrentColor("--secondary-color");
-
+const SecondaryButton = () => {
+	const { currentColor, handleCurrentColorChange } = useCurrentColor(
+		"--secondary-button-color"
+	);
 	return (
 		<label
 			className="flex flex-col items-center h-full px-[25px] bg-[#ffffff] rounded-[5px] gap-[5px] cursor-pointer"
-			htmlFor="background"
+			htmlFor="secondary"
 		>
 			<div className="w-[60px] h-[10px]">
 				<input
@@ -19,13 +20,13 @@ const BackgroundButton = () => {
 				/>
 			</div>
 			<div className="flex flex-col items-center cursor-pointer">
-				<label className="mt-[5px] cursor-pointer" htmlFor="background">
-					Background
+				<label className="mt-[5px] cursor-pointer" htmlFor="secondary">
+					Secondary Button
 				</label>
 				<input
-					className="invisible"
+					className="invisible h-0 w-0"
 					type="color"
-					id="background"
+					id="secondary"
 					value={currentColor}
 					onChange={(e) => handleCurrentColorChange(e.target.value)}
 				/>
@@ -34,4 +35,4 @@ const BackgroundButton = () => {
 	);
 };
 
-export default BackgroundButton;
+export default SecondaryButton;

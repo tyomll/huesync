@@ -1,16 +1,14 @@
-import { useCurrentColor } from "../../hooks/useCurrentColor";
+import { useCurrentColor } from "../../../hooks/useCurrentColor";
 
-const PrimaryButton = () => {
-	const { currentColor, handleCurrentColorChange } = useCurrentColor(
-		"--primary-button-color"
-	);
-
+const TextButton = () => {
+	const { currentColor, handleCurrentColorChange } =
+		useCurrentColor("--primary-color");
 	return (
 		<label
 			className="flex flex-col items-center h-full px-[25px] bg-[#ffffff] rounded-[5px] gap-[5px] cursor-pointer"
-			htmlFor="primary"
+			htmlFor="text"
 		>
-			<div className="w-[60px] h-[10px]">
+			<div className="w-[60px] h-[10px] ">
 				<input
 					className="w-full h-full text-[13px] outline-none text-center bg-[#f3f3f3]"
 					type="text"
@@ -20,13 +18,13 @@ const PrimaryButton = () => {
 				/>
 			</div>
 			<div className="flex flex-col items-center cursor-pointer">
-				<label className="mt-[5px] cursor-pointer" htmlFor="primary">
-					Primary Button
+				<label className="mt-[5px] cursor-pointer" htmlFor="text">
+					Text
 				</label>
 				<input
 					className="invisible"
 					type="color"
-					id="primary"
+					id="text"
 					value={currentColor}
 					onChange={(e) => handleCurrentColorChange(e.target.value)}
 				/>
@@ -35,4 +33,4 @@ const PrimaryButton = () => {
 	);
 };
 
-export default PrimaryButton;
+export default TextButton;

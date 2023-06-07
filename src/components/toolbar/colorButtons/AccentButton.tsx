@@ -1,4 +1,4 @@
-import { useCurrentColor } from "../../hooks/useCurrentColor";
+import { useCurrentColor } from "../../../hooks/useCurrentColor";
 
 const AccentButton = () => {
 	const { currentColor, handleCurrentColorChange } =
