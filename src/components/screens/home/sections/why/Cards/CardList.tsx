@@ -14,12 +14,12 @@ const cards: ICard[] = [
 	},
 	{
 		bg: "secondaryButton",
-		highlight: "secondary",
+		highlight: "secondaryButton",
 		text: "User-Friendly Interface",
 	},
 	{
 		bg: "primaryButton",
-		highlight: "secondary",
+		highlight: "secondaryButton",
 		text: "Inspiration",
 	},
 	{
@@ -29,7 +29,7 @@ const cards: ICard[] = [
 	},
 	{
 		bg: "secondaryButton",
-		highlight: "secondary",
+		highlight: "secondaryButton",
 		text: "Time-saving",
 	},
 	{
