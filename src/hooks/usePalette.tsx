@@ -1,10 +1,7 @@
-import { useEffect, useState } from "react";
-
 export const usePalette = () => {
 	interface IPalette {
 		[key: string]: string;
 	}
-
 	const labels = [
 		{ colorName: "--primary-color", label: "primary" },
 		{ colorName: "--secondary-color", label: "secondary" },

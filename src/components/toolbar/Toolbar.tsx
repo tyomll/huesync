@@ -6,6 +6,7 @@ import SecondaryButton from "./colorButtons/SecondaryButton";
 import AccentButton from "./colorButtons/AccentButton";
 import ExportButton from "./ExportButton";
 import ColorsButton from "./ColorsButton";
+import RandomizerButton from "./RandomizerButton";
 
 const Toolbar: FC = () => {
 	const shadow = { boxShadow: "0px 3px 0px #191A23" };
@@ -22,6 +23,7 @@ const Toolbar: FC = () => {
 				<SecondaryButton />
 				<AccentButton />
 				<ExportButton />
+				<RandomizerButton />
 			</div>
 			<div className="flex lg:hidden items-center justify-between gap-[20px] ">
 				<ColorsButton />

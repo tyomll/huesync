@@ -8,7 +8,7 @@ const ExportButton = () => {
 			className="flex flex-col justify-center items-center h-full px-[15px] bg-[#ffffff] rounded-[5px] gap-[5px] cursor-pointer"
 			onClick={() => createFile()}
 		>
-			<div className="w-fit h-fit border-[1px] border-[#000000] rounded-[5px]">
+			<div className="w-fit h-fit border-[2px] border-[#000000] rounded-[5px]">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="30"
