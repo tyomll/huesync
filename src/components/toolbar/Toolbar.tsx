@@ -28,6 +28,7 @@ const Toolbar: FC = () => {
 			<div className="flex lg:hidden items-center justify-between gap-[20px] ">
 				<ColorsButton />
 				<ExportButton />
+				<RandomizerButton />
 			</div>
 		</div>
 	);
